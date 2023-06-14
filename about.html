@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="class-container">
+        <!-- Modal Body -->
+        <div class="modaL">
+            <div id="bothModals">
+                <div id="tabs">
+                    <button class="tab" type="button" onclick="switchtabs('Mbody2')"><i class="bi bi-person-fill"></i>
+                        Login</button><button class="tab active" type="button" onclick="switchtabs('Mbody1')"><i
+                            class="bi bi-person-plus-fill"></i> Register</button>
+                    <div class="line inline"></div>
+                </div>
+                <div class="Mbody" id="Mbody1">
+                    <div class="mt-3">
+                        <i class="bi bi-person-fill"></i><br>
+                        <select name="honors" id="honors">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="">None</option>
+                        </select>
+                        <br>
+                        <input type="text" id="reg-name" class="mt-2 inp"><br>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-envelope-fill"></i><br>
+                        <input type="email" id="reg-email" class="inp"><br>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-phone"></i><br>
+                        <input type="tel" id="reg-mobile" class="inp"><br>
+                        <label for="phone">Your Mobile</label>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-lock-fill"></i><br>
+                        <input type="password" id="reg-pass" class="inp"><br>
+                        <label for="password">Your Password</label>
+                    </div>
+                    <div class="text-center mt-5">
+                        <button class="btn btn-success" type="button" onclick="registerUser()">Sign Up</button>
+                    </div>
+                    <div class="mt-3 verify" id="verify"></div>
+                    <hr>
+                    <div class="text-end mt-5">
+                        <button class="btn btn-outline-primary" type="button" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+                <div class="Mbody" id="Mbody2">
+                    <div class="mt-3">
+                        <i class="bi bi-envelope-fill"></i><br>
+                        <input type="email" id="email" class="inp"><br>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="">
+                        <i class="bi bi-lock-fill"></i><br>
+                        <input type="password" id="pass" class="inp"><br>
+                        <label for="password">Your Password</label>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success" type="button" onclick="logUserIn()">Log In</button>
+                    </div>
+                    <div class="mt-3 verify" id="verify2"></div>
+                    <hr>
+                    <div class="text-end">
+                        <button class="btn btn-outline-primary" onclick="closeModal()" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal -->
+        <header>
+            <div class="text-center bg-dark" id="topheader">FREE SHIPPING WORLDWIDE</div>
+            <div id="fixed-header">
+                <div class="inline p-2 left">
+                    <img src="images/Mushroom.webp" alt="gameicon" id="game-icon">
+                    <p class="inline fs-5">SHOGUN GAMING STUDIO</p>
+                </div>
+
+                <div class="inline right p-2">
+                    <div class="inline me-3">
+                        <p class="inline" id="guest">Welcome, Guest</p>
+                        <p class="inline" id="admin"></p>
+                        <p class="inline" id="display-user"></p>
+                    </div>
+                    <div class="inline me-3" onclick="window.open('cart.html', '_self')"><i
+                            class="fa fa-shopping-cart"></i> CART <span id="numOfItems">0</span></div>
+                    <button class="inline bg-dark rounded me-3 text-center p-1" type="button"
+                        onclick="showOptions('#nav')"><i class="bi bi-list white"></i><i
+                            class="bi bi-caret-down-fill white"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="text-center" id="nav">
+                <a href="index.html" class="Nav-items">Home</a> <br>
+                <a href="shop.html" class="Nav-items">Shop</a> <br>
+                <a href="about.html" class="Nav-items">About Us</a> <br>
+                <a href="contact.html" class="Nav-items">Contact</a> <br>
+                <a href="blog.html" class="Nav-items">Blog</a> <br>
+                <p class="Nav-items" id="signUp" onclick="openModal()">Signup/Login</p>
+                <div id="loggedUserOptions">
+                    <a href="product.html" class="Nav-items">Add Products</a> <br>
+                    <a href="lists.html" class="Nav-items">List Products</a> <br>
+                </div>
+                <p class="Nav-items" id="logout" onclick="logOut()">Logout</p>
+                <div>
+                    <a href="https://www.facebook.com" class="icons"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.twitter.com" class="icons"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.youtube.com" class="icons"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.google.com" class="icons"><i class="bi bi-pinterest"></i></a>
+                    <a href="https://www.google.com" class="icons"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="contain">
+            <h1 class="ps-5">About US</h1>
+            <div class="container">
+                <h2 class="mt-3">What we do?</h2>
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et
+                    dolore magna aliqua. Tellus integer feugiat scelerisque varius morbi enim nunc. Feugiat scelerisque
+                    varius morbi enim nunc. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Aliquet lectus
+                    proin
+                    nibh nisl condimentum id venenatis a condimentum. Luctus venenatis lectus magna fringilla urna
+                    porttitor. Malesuada fames ac turpis egestas sed tempus urna. Orci a scelerisque purus semper eget
+                    duis
+                    at tellus. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Nullam ac tortor
+                    vitae
+                    purus faucibus. Sodales neque sodales ut etiam sit amet. Amet mattis vulputate enim nulla aliquet.
+                </p>
+                <h2>Our Gaming Studio</h2>
+                <p class="about">Duis ut diam quam nulla porttitor massa id neque aliquam. Massa ultricies mi quis
+                    hendrerit. Maecenas
+                    accumsan lacus vel facilisis volutpat est velit egestas. At augue eget arcu dictum varius duis at.
+                    Eros donec ac odio tempor. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing.
+                    Mattis enim ut tellus elementum sagittis vitae et leo duis. Facilisi etiam dignissim diam quis enim
+                    lobortis scelerisque fermentum dui. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+                    cras. Feugiat sed lectus vestibulum mattis. Sit amet consectetur adipiscing elit. Eget duis at
+                    tellus at urna condimentum mattis. Aliquet lectus proin nibh nisl condimentum. At volutpat diam ut
+                    venenatis tellus in metus vulputate eu. Facilisis volutpat est velit egestas dui. Et pharetra
+                    pharetra massa massa ultricies mi quis. Et netus et malesuada fames ac turpis egestas.</p>
+                <h2>10 Intersting Facts About Us</h2>
+                <ul class="about li">
+                    <li>Justo laoreet sit amet cursus sit amet dictum sit amet.</li>
+                    <li>Commodo nulla facilisi nullam vehicula ipsum a. Magna fermentum iaculis eu non diam phasellus
+                        vestibulum lorem sed.</li>
+                    <li>A diam maecenas sed enim ut sem. Fusce ut placerat orci nulla pellentesque dignissim enim.</li>
+                    <li>Commodo elit at imperdiet dui accumsan sit amet nulla facilisi.</li>
+                    <li>Auctor eu augue ut lectus arcu bibendum at varius. Nunc non blandit massa enim nec dui nunc.
+                    </li>
+                    <li>Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.</li>
+                    <li>Eget magna fermentum iaculis eu non diam. Faucibus vitae aliquet nec ullamcorper sit. </li>
+                    <li>Nisl rhoncus mattis rhoncus urna neque viverra justo. </li>
+                    <li>Mi bibendum neque egestas congue quisque egestas diam in. </li>
+                    <li>Ut venenatis tellus in metus.</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md">
+                        <ul>
+                            <li class="foot-list" onclick="window.open('shop.html', '_self')">Shop</li>
+                            <li class="foot-list" onclick="window.open('index.html', '_self')">Stockists</li>
+                            <li class="foot-list" onclick="window.open('blog.html', '_self')">Blog</li>
+                            <li class="foot-list" onclick="window.open('about.html', '_self')">About Us</li>
+                            <li class="foot-list" onclick="window.open('contact.html', '_self')">Contact</li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <ul>
+                            <li class="foot-list" onclick="window.open('FAQ.html', '_self')">FAQ</li>
+                            <li class="foot-list" onclick="window.open('index.html', '_self')">Shipping & Returns</li>
+                            <li class="foot-list" onclick="window.open('index.html', '_self')">Store Policy</li>
+                            <li class="foot-list" onclick="window.open('index.html', '_self')">Payment Methods</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <input type="email" placeholder="Enter your email here" id="subscribe">
+                            <button id="subscribe-btn" type="button" onclick="subscribe()">Subscribe</button>
+                        </div>
+                        <div class="mt-4 text-end last">
+                            <a href="https://www.facebook.com" class="icons"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.twitter.com" class="icons"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.youtube.com" class="icons"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.google.com" class="icons"><i class="bi bi-pinterest"></i></a>
+                            <a href="https://www.google.com" class="icons"><i class="bi bi-instagram"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="myScript.js"></script>
+    <script>
+        window.onload = function () {
+            displayUser();
+            displayItemNum()
+        }
+    </script>
+</body>
+
+</html>

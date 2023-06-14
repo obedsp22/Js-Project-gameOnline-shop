@@ -1,0 +1,449 @@
+#topheader {
+    color: gray;
+}
+
+#game-icon {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.white {
+    color: white;
+}
+
+.inline {
+    display: inline;
+}
+
+.left {
+    float: left;
+    font-family: "Courier";
+}
+
+.right {
+    float: right;
+}
+
+#fixed-header {
+    background-color: white;
+    width: 100%;
+}
+
+#nav {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 2.4%;
+    margin-left: 89%;
+    padding: 10px 5px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    border-radius: 2px;
+}
+
+#loggedUserOptions,
+#logout {
+    display: none;
+}
+
+.Nav-items {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+}
+
+.Nav-items:hover {
+    color: blue;
+}
+
+/* Main Header */
+.mainheader {
+    background: url(images/Super-Mario.webp) no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+    margin-top: 45px;
+}
+
+#maintext {
+    padding-top: 260px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#shopnow {
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#shopnow:hover {
+    color: blue;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+/* Cards CSS */
+.img-height {
+    height: 280px;
+}
+
+.image-cards {
+    width: 200px;
+    height: auto;
+    margin: 40px 0px;
+}
+
+#middle {
+    margin-bottom: 50px;
+}
+
+.carD {
+    max-width: 350px;
+    margin-left: 100px;
+}
+
+.carD:hover {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: 1s ease;
+    color: blue;
+}
+
+/* Footer CSS */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+.row {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+#subscribe {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid gray;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+}
+
+#subscribe-btn {
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+#subscribe-btn:hover {
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+}
+
+.foot-list:hover {
+    color: lightblue;
+}
+
+.last {
+    margin-right: 220px;
+}
+
+#limited {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Modals CSS*/
+.modaL {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.6);
+    ;
+}
+
+#bothModals {
+    margin-left: 25%;
+    background-color: white;
+    width: 1000px;
+    /* height: 700px; */
+    border-radius: 5px;
+}
+
+.Mbody {
+    padding: 50px;
+}
+
+#Mbody2 {
+    display: none;
+}
+
+#honors {
+    width: 75px;
+    border-radius: 5px;
+}
+
+.inp {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.tab {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    padding: 10px 15px;
+    color: lightgray;
+}
+
+.active {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.verify {
+    display: none;
+    padding: 5px 15px;
+}
+
+
+/* Shopping Page */
+.no-Items {
+    margin-top: 80px;
+    margin-bottom: 324px;
+}
+
+.h2 {
+    margin-top: 90px;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 55px;
+}
+
+#noitems {
+    font-family: sans-serif;
+    font-size: 50px;
+    padding: 25px;
+}
+
+.forCust:hover {
+    background-color: gray;
+    transform: scale(1.1);
+    transition: 1s ease;
+    color: red;
+}
+
+/* Products Page */
+.products {
+    margin-top: 80px;
+    background-color: aliceblue;
+
+}
+
+#prod-name,
+#prod-price {
+    width: 100%;
+    padding: 5px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+.prod {
+    padding-top: 150px;
+    padding-left: 300px;
+    padding-bottom: 150px;
+}
+
+#picture {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#choose-img {
+    width: 100%;
+}
+
+
+/* Products Lists Page */
+.prod-list {
+    margin-bottom: 100px;
+}
+
+.carDs {
+    max-width: 350px;
+    margin: 100px 50px;
+}
+
+#quest {
+    width: 200px;
+}
+
+.confirm-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.confirm {
+    padding: 20px;
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: white;
+    width: 800px;
+    border-radius: 5px;
+}
+
+#no-prods {
+    margin: 180px 0px;
+}
+
+
+/* View Product Page */
+.img-view {
+    width: 300px;
+    height: 100%;
+}
+
+#single-prod {
+    max-width: 2000px;
+    margin: 100px 150px;
+}
+
+/* .sing-img {
+    width: 600px;
+    height: 600px;
+} */
+
+#img-div {
+    width: 650px;
+    height: 700px;
+}
+
+.btn1 {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn1:hover {
+    color: black;
+    background-color: white;
+}
+
+.info {
+    width: 100%;
+    padding: 15px;
+}
+
+.info:hover {
+    color: lightblue;
+}
+
+.h5 {
+    font-size: 30px;
+}
+
+#price-info {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#prod-quantity {
+    padding: 5px;
+    width: 100px;
+    margin-top: 15px;
+}
+
+.bord {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.prod-bord {
+    border-bottom: 1px solid lightgray;
+}
+
+
+.contain {
+    margin-top: 150px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.about {
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.li {
+    list-style-type: disc;
+    margin-bottom: 50px;
+}
+
+.soon {
+    width: 350px;
+    border-radius: 5px;
+}
+
+.cart {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.Table {
+    display: none;
+}
+
+.e-cart {
+    font-size: 30px;
+    padding: 180px;
+}
+
+.faqhidden {
+     display: none;
+     font-family: sans-serif;
+     color: rgb(219, 219, 29);
+}
+
+.list {
+    line-height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    color: white;
+    text-decoration: none;
+}
