@@ -2,6 +2,10 @@ function showOptions(tab) {
     $(tab).fadeToggle("slow")
 }
 
+function closeNav(nav) {
+    $(nav).fadeToggle("slow")
+}
+
 function openModal() {
     $(".modaL").css("display", "block")
     $("#nav").hide()
