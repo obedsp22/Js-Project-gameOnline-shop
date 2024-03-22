@@ -176,9 +176,8 @@ ul {
 #bothModals {
     margin-left: 25%;
     background-color: white;
-    width: 1000px;
-    /* height: 700px; */
-    border-radius: 5px;
+    width: 60%;
+    border-radius: 8px;
 }
 
 .Mbody {
@@ -254,16 +253,13 @@ ul {
 
 #prod-name,
 #prod-price {
-    width: 100%;
     padding: 5px;
     margin-top: 15px;
     font-family: sans-serif;
 }
 
-.prod {
-    padding-top: 150px;
-    padding-left: 300px;
-    padding-bottom: 150px;
+.add-prod-input {
+    width: 90%;
 }
 
 #picture {
@@ -444,8 +440,4 @@ img {
 .icons {
     color: white;
     text-decoration: none;
-}
-
-@media screen and (min-width: 600px) {
-    
 }
