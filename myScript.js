@@ -189,6 +189,7 @@ function displayUser() {
         $("#logout").hide();
     }
 
+    console.log("Admin Login \nEmail: admin@email.com \nPassword: admin123")
 }
 
 // function generateRandom(min,max) {
