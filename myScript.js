@@ -304,7 +304,7 @@ function displayProducts() {
     let div = '';
 
     if (allProducts == null || allProducts == '') {
-        div = `<p class="h2 ps-5" id="no-prods" style="font-family: 'Courier New', Courier, monospace;">Sorry, our admin has not entered any items currently. Please be sure to come back soon, or notify us about this issue. We do appreciate feedback.</p>`
+        div = `<p class="h5 ps-5" id="no-prods" style="font-family: 'Courier New', Courier, monospace; height: 25vh;">Sorry, our admin has not entered any items currently. Please be sure to come back soon, or notify us about this issue. We do appreciate feedback.</p>`
     }
     else {
         allProducts.forEach((items, j) => {
@@ -503,10 +503,10 @@ function subscribe() {
     let email = $("#subscribe").val();
     let pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     let test = pattern.test(email);
-    if(test == true){
+    if (test == true) {
         swal("Thank You!", "You are Subscribed", "success");
     }
-    else{
+    else {
         swal("Invaild email", "Please enter a valid email", "warning");
     }
 }
